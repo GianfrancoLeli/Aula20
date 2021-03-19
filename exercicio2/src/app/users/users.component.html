@@ -1,0 +1,14 @@
+<header>
+<h1 class="text-center" >Lista de Usuários!!!</h1>
+</header>
+
+<br>
+
+<hr color="navy" class="list">
+<div *ngFor="let user of users">
+    <p><b>ID:</b> {{ user.id }} <br>
+    <b>Nome:</b> {{ user.name }} <br>
+    <b>Email:</b> {{ user.email }} <br>
+    <b>Endereço:</b> {{ user.address.street}}, {{ user.address.suite }}, {{ user.address.city }} </p>
+<hr>
+</div>
